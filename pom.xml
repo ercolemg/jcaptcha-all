@@ -1,0 +1,81 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.octo.captcha</groupId>
+  <artifactId>jcaptcha-all</artifactId>
+  <version>1.2-jakarta</version>
+  <packaging>jar</packaging>
+
+  <name>JCaptcha (Jakarta)</name>
+  <description>JCaptcha compatibile con Java 21 e Jakarta EE</description>
+  <url>https://www.jcaptcha.net</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <build>
+	  <finalName>cascprocedure-jcaptcha-all-common</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+          <release>21</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <version>1.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>6.1.0</version>
+      <scope>provided</scope>
+    </dependency>
+    
+    <dependency>
+	    <groupId>com.jhlabs</groupId>
+	    <artifactId>filters</artifactId>
+	    <version>2.0.235</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>net.sf.sociaal</groupId>
+	    <artifactId>freetts</artifactId>
+	    <version>1.2.2</version>
+	</dependency>
+	
+	<dependency>
+	  <groupId>commons-collections</groupId>
+	  <artifactId>commons-collections</artifactId>
+	  <version>3.2.2</version> 
+	</dependency>
+
+	<dependency>
+	  <groupId>org.quartz-scheduler</groupId>
+	  <artifactId>quartz</artifactId>
+	  <version>2.3.2</version>
+	</dependency>
+
+	<dependency>
+	    <groupId>org.ehcache</groupId>
+	    <artifactId>ehcache</artifactId>
+	    <version>3.9.11</version>
+	</dependency>
+
+
+  </dependencies>
+</project>
